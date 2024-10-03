@@ -4,5 +4,22 @@
 <title>password</title>
 </head>
 <body>
+  <p style="font-size: 30pt;">Sup</p>
+<p>Please enter password to view site</p>
+<p>Password:<input id="passwordBox" type="password"/></p>
+<a href="main.html"onclick="return checkPassword();">
+Click here to submit password
+</a>
+<script>
+    function checkPassword() {
+        var password = document.getElementById("passwordBox") 
+        var passwordText = password.value;
+        if(passwordText == "caleb"){
+            return true;
+        }
+        alert("You got a B. You Failure!");
+        return false
+    }
+ </script>
 </body>
 </html>
